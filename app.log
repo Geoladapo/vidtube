@@ -1,0 +1,90 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:07:58.147Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:15:43.318Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:15:53.104Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:17:46.406Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:18:05.217Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:18:21.135Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:18:43.834Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T07:20:01.043Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Mongodb connection error MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","timestamp":"2024-10-08T08:56:31.608Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Mongodb connection error MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","timestamp":"2024-10-08T10:12:35.719Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Mongodb connection error MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","timestamp":"2024-10-08T10:13:09.817Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T10:14:35.544Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T10:15:24.810Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T10:21:22.268Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 5000","timestamp":"2024-10-08T10:21:51.419Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port undefined","timestamp":"2024-10-08T10:22:02.519Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port undefined","timestamp":"2024-10-08T10:22:44.060Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port undefined","timestamp":"2024-10-08T10:23:17.433Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port undefined","timestamp":"2024-10-08T10:24:05.610Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 8000","timestamp":"2024-10-08T10:24:40.917Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 8000","timestamp":"2024-10-08T10:25:23.809Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 8000","timestamp":"2024-10-08T10:27:18.311Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 8000","timestamp":"2024-10-08T10:27:59.526Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:30:12.875Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:32:07.485Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:32:07.492Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:32:37.905Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:32:37.914Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:50:52.026Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:50:52.043Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:52:51.573Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:52:51.591Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:52:57.471Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:52:57.485Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:54:55.756Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:54:55.765Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:55:29.443Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:55:29.451Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:55:56.667Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:55:56.677Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:56:43.787Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:56:43.800Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:57:03.786Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:57:03.796Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:58:08.857Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:58:08.881Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T10:59:14.012Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T10:59:14.020Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:00:11.371Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:00:11.400Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:02:20.482Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:02:20.492Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:02:51.003Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:02:51.012Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:03:06.232Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:03:06.244Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:03:27.281Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:03:27.590Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:03:35.047Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:03:35.067Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:15:23.313Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:15:23.326Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:20:05.076Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:20:05.090Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:20:44.873Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:20:44.882Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:21:21.504Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:21:21.516Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:21:37.726Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:21:37.749Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:22:21.702Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:22:21.713Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:23:28.281Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:23:28.290Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:26:08.815Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:26:08.875Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:26:17.001Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:26:17.012Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:27:03.011Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:27:03.019Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:27:35.774Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:27:35.782Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:28:32.156Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:28:32.250Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:28:45.574Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:28:45.582Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:30:52.555Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:30:52.569Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mongodb conncected","timestamp":"2024-10-08T11:30:58.511Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server running on port 4000","timestamp":"2024-10-08T11:30:58.526Z"}
