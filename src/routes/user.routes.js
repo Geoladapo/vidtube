@@ -32,7 +32,7 @@ router.route("/register").post(
   ]),
   registerUser
 );
-router.toute("/login").post(loginUser);
+router.route("/login").post(loginUser);
 router.route("/refresh-token").post(refreshAccessToken);
 
 // secured routes
