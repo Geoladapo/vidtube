@@ -62,3 +62,65 @@ export const getAllVideos = asyncHandler(async (req, res) => {
     )
   );
 });
+
+export const publishAVideo = asyncHandler(async (req, res) => {
+  const { title, description } = req.body;
+
+  // TODO: get video, upload to cloudinary, create video
+  // Validation
+  if ([title, description].some((field) => field?.trim() === "")) {
+    throw new ApiError(400, "Title and description are required");
+  }
+
+  console.warn(req.files);
+  const videoFileLocalPath = req.files?.video?.[0]?.path;
+
+  if (!videoFileLocalPath) {
+    throw new ApiError(400, "Video file is missing");
+  }
+
+  // upload video to Cloudinary
+  let uploadVideo;
+  try {
+    uploadedVideo = await uploadOnCloudinary(videoFileLocalPath, "video");
+    console.log("Uploading video: ", uploadedVideo);
+  } catch (error) {
+    console.log("Error uploading video", error);
+    throw new ApiError(500, "Failed to upload video");
+  }
+
+  // Creating the video in the database
+  try {
+    const video = Video.create({
+      title,
+      description,
+      videoUrl: uploadedVideo.url,
+      publicId: uploadedVideo.public_id,
+      uploadedBy: req.user._id,
+    });
+
+    const createdVideo = await Video.findById(video._id).populate(
+      "uploadedBy",
+      "username email"
+    );
+
+    if (!createdVideo) {
+      throw new ApiError(
+        500,
+        "Something went wrong while publishing the video"
+      );
+    }
+
+    res
+      .status(201)
+      .json(new ApiResponse(201, createdVideo, "Video published successfully"));
+  } catch (error) {
+    console.log("Video creation failed");
+
+    if (uploadedVideo) {
+      await deleteFromCloudinary(uploadedVideo.public_id);
+    }
+
+    throw new ApiError(500, "Failed to publish video and video was deleted");
+  }
+});
