@@ -1,6 +1,9 @@
 import { Router } from "express";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
-import { getAllVideos,publishAVideo } from "../controllers/video.controller.js";
+import {
+  getAllVideos,
+  publishAVideo,
+} from "../controllers/video.controller.js";
 import { upload } from "../middlewares/multer.middleware.js";
 
 const router = new Router();
@@ -19,7 +22,7 @@ router
         name: "thumbnail",
         maxCount: 1,
       },
-    ])
+    ]),
     publishAVideo
   );
 
