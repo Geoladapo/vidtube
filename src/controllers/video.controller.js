@@ -73,20 +73,34 @@ export const publishAVideo = asyncHandler(async (req, res) => {
   }
 
   console.warn(req.files);
-  const videoFileLocalPath = req.files?.video?.[0]?.path;
+  const videoFileLocalPath = req.files?.videoFile?.[0]?.path;
+  const thumbnailFileLocalPath = req.files?.thumbnail?.[0]?.path;
 
   if (!videoFileLocalPath) {
     throw new ApiError(400, "Video file is missing");
   }
 
+  if (!thumbnailFileLocalPath) {
+    throw new ApiError(400, "Thumbnail file is missing");
+  }
+
   // upload video to Cloudinary
   let uploadVideo;
   try {
-    uploadedVideo = await uploadOnCloudinary(videoFileLocalPath, "video");
-    console.log("Uploading video: ", uploadedVideo);
+    uploadVideo = await uploadOnCloudinary(videoFileLocalPath);
+    console.log("Uploading video: ", uploadVideo);
   } catch (error) {
     console.log("Error uploading video", error);
     throw new ApiError(500, "Failed to upload video");
+  }
+
+  let thumbnail;
+  try {
+    thumbnail = await uploadOnCloudinary(thumbnailFileLocalPath);
+    console.log("Uploading thumbnail: ", thumbnail);
+  } catch (error) {
+    console.log("Error uploading video", error);
+    throw new ApiError(500, "Failed to upload thumbnail");
   }
 
   // Creating the video in the database
