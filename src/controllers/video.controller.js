@@ -131,8 +131,8 @@ export const publishAVideo = asyncHandler(async (req, res) => {
   } catch (error) {
     console.log("Video creation failed");
 
-    if (uploadedVideo) {
-      await deleteFromCloudinary(uploadedVideo.public_id);
+    if (uploadVideo) {
+      await deleteFromCloudinary(uploadVideo.public_id);
     }
 
     throw new ApiError(500, "Failed to publish video and video was deleted");
