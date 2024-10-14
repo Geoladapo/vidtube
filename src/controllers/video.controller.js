@@ -108,8 +108,8 @@ export const publishAVideo = asyncHandler(async (req, res) => {
     const video = Video.create({
       title,
       description,
-      videoUrl: uploadedVideo.url,
-      publicId: uploadedVideo.public_id,
+      videoUrl: uploadVideo.url,
+      publicId: uploadVideo.public_id,
       uploadedBy: req.user._id,
     });
 
@@ -137,4 +137,78 @@ export const publishAVideo = asyncHandler(async (req, res) => {
 
     throw new ApiError(500, "Failed to publish video and video was deleted");
   }
+});
+
+export const getVideoById = asyncHandler(async (req, res) => {
+  const { videoId } = req.params;
+
+  const video = await Video.findById(videoId);
+
+  if (!video) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  res.status(200).json(new ApiResponse(200, video));
+});
+
+export const updateVideo = asyncHandler(async (req, res) => {
+  const { videoId } = req.params;
+  // TODO: get video, upload to cloudinary, create video
+  const video = await Video.findById(videoId);
+  const videoPath = req.files?.path;
+
+  if (!video) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  if (!videoPath) {
+    throw new ApiError(404, "No video file uploaded");
+  }
+
+  const uploadVideo = await uploadOnCloudinary(videoPath);
+
+  if (!uploadVideo.url) {
+    throw new ApiError(500, "Something went wrong while uploading video");
+  }
+
+  await Video.findByIdAndUpdate(
+    videoId,
+    {
+      $set: {
+        videourl: uploadVideo.url,
+        publicId: uploadVideo.public_id,
+      },
+    },
+    {
+      new: true,
+    }
+  ).select("-__v");
+
+  return res
+    .status(200)
+    .json(new ApiResponse(200, updatedVideo, "Video updated successfully"));
+});
+
+export const deleteVideo = asyncHandler(async (req, res) => {
+  const { videoId } = req.params;
+  //TODO: delete video
+  const video = await Video.findById(videoId);
+
+  if (!video) {
+    throw new ApiError(404, "Video not found");
+  }
+
+  if (video.public_id) {
+    await deleteFromCloudinary(video.public_id);
+  }
+
+  await video.remove();
+
+  return res
+    .status(200)
+    .json(new ApiResponse(200, null, "Video deleted successfully"));
+});
+
+const togglePublishStatus = asyncHandler(async (req, res) => {
+  const { videoId } = req.params;
 });
